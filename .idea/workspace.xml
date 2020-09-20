@@ -11,6 +11,9 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
@@ -68,6 +71,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1hFAUDZjbe8QCbs2EfXEfHf6cBT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -96,12 +100,47 @@
       <updated>1599596480077</updated>
       <workItem from="1599596481134" duration="18564000" />
       <workItem from="1599905551989" duration="12680000" />
-      <workItem from="1600201804256" duration="52814000" />
+      <workItem from="1600201804256" duration="53160000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1600645604164</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600645604164</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="860" y="355" key="#PHP_CS_Fixer" timestamp="1600549784504">
@@ -148,6 +187,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1600644886353" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1600645611850">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1600645611850" />
     <state x="1583" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1599598765063">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
