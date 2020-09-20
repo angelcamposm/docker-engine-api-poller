@@ -1,56 +1,56 @@
 {
-    "name": "acamposm/docker-engine-api-poller",
-    "description": "A Laravel package to allow laravel applications to query the Docker Engine API.",
-    "keywords": [
-        "docker",
-        "api",
-        "metrics",
-        "laravel",
-        "php",
-        "package"
-    ],
-    "homepage": "https://github.com/angelcamposm/docker-engine-api-poller",
-    "readme": "https://github.com/angelcamposm/docker-engine-api-poller/blob/master/README.MD",
-    "license": "MIT",
-    "type": "library",
-    "authors": [
-        {
-            "name": "Angel Campos Muñoz",
-            "email": "angel.campos.m@outlook.com",
-            "role": "Developer"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "php": ">=7.4",
-      "ext-json": "*"
-    },
-    "require-dev": {
-        "pestphp/pest": "^0.4.0@dev"
-    },
-    "autoload": {
-        "psr-4": {
-            "Acamposm\\DockerEngineApiPoller\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Acamposm\\DockerEngineApiPoller\\Tests\\": "tests"
-        }
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Acamposm\\DockerEngineApiPoller\\DockerEngineApiPollerServiceProvider"
-            ],
-            "aliases": {
-            }
-        }
-    },
-    "scripts": {
-        "test": "phpunit --colors=always --testdox"
+  "name": "acamposm/docker-engine-api-poller",
+  "description": "A Laravel package to allow laravel applications to query the Docker Engine API.",
+  "keywords": [
+    "docker",
+    "api",
+    "metrics",
+    "laravel",
+    "php",
+    "package"
+  ],
+  "homepage": "https://github.com/angelcamposm/docker-engine-api-poller",
+  "readme": "https://github.com/angelcamposm/docker-engine-api-poller/blob/master/README.MD",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Angel Campos Muñoz",
+      "email": "angel.campos.m@outlook.com",
+      "role": "Developer"
     }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.4",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "pestphp/pest": "^0.4.0@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Acamposm\\DockerEngineApiPoller\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Acamposm\\DockerEngineApiPoller\\Tests\\": "tests"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Acamposm\\DockerEngineApiPoller\\DockerEngineApiPollerServiceProvider"
+      ],
+      "aliases": {
+      }
+    }
+  },
+  "scripts": {
+    "test": "phpunit --colors=always --testdox"
+  }
 }

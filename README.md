@@ -9,7 +9,7 @@ to communicate with the Engine, so everything the Docker client can do can be do
 - [Requirements](#requirements)
 - [Usage](#usage)
   - [Basic Initialization](#basic-initialization)
-  - [Resources](#resources)
+  - [API Resources](#api-resources)
     - [Containers](#containers)
     - [Images](#images)
     - [Networks](#networks)
@@ -24,7 +24,7 @@ You can install the package via [composer](https://getcomposer.org/) and then pu
 
 composer require acamposm/docker-poller
 
-php artisan vendor:publish --provider="Acamposm\DockerPoller\DockerPollerServiceProvider"
+php artisan vendor:publish --provider="Acamposm\DockerEngineApiPoller\DockerPollerServiceProvider"
 
 ```
 
@@ -41,6 +41,10 @@ control who can perform request to this API.
 ## Usage
 
 ### Basic Initialization
+
+First, create a DockerServer instance with the details of the docker server hosts. 
+
+***Note:*** By default, the DockerServer class, has as a default parameters the default port of Docker Engine API (2375) and the protocol (http).
 
 #### Docker Engine API over HTTP
 
@@ -73,7 +77,7 @@ use Acamposm\DockerEngineApiPoller\DockerServer;
 $server = (new DockerServer())->secure()->port(12375)->server('localhost');
 ```
 
-### Resoources
+### API Resources
 
 #### Containers
 

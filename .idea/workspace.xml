@@ -78,7 +78,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../php/Phing" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="settings.php.quality.tools" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -96,7 +96,7 @@
       <updated>1599596480077</updated>
       <workItem from="1599596481134" duration="18564000" />
       <workItem from="1599905551989" duration="12680000" />
-      <workItem from="1600201804256" duration="52339000" />
+      <workItem from="1600201804256" duration="52814000" />
     </task>
     <servers />
   </component>
@@ -136,18 +136,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1038" y="559" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1600639374744" />
-    <state x="1059" y="455" key="FileChooserDialogImpl" timestamp="1600549833697">
+    <state x="1059" y="455" key="FileChooserDialogImpl" timestamp="1600644827592">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1059" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1600549833697" />
+    <state x="1059" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1600644827592" />
     <state x="1047" y="423" key="NewPhpClassDialog" timestamp="1600565208869">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1047" y="423" key="NewPhpClassDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1600565208869" />
-    <state x="781" y="345" key="SettingsEditor" timestamp="1600552612547">
+    <state x="781" y="345" key="SettingsEditor" timestamp="1600644886353">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1600552612547" />
+    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1600644886353" />
     <state x="1583" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1599598765063">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
