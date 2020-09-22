@@ -156,7 +156,10 @@ class DockerApiRequest
      * @return DockerApiRequest
      * @throws VolumeNotDefinedException|MethodNotDefinedException
      */
-    public function volumes(string $method = ResourceMethods::VOLUMES_LIST, string $id = ''): DockerApiRequest
+    public function volumes(
+        string $method = ResourceMethods::VOLUMES_LIST,
+        string $id = ''
+    ): DockerApiRequest
     {
         switch ($method) {
             case ResourceMethods::VOLUMES_INSPECT:
