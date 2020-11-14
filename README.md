@@ -1,6 +1,6 @@
 # Docker Poller for Laravel
 
-This package allows laravel applications to interact with the Docker Engine API.
+This package allows Laravel applications to interact with the Docker Engine API.
 
 The Docker Engine API is an HTTP API served by Docker Engine. It is the API the Docker client uses 
 to communicate with the Engine, so everything the Docker client can do can be done with the API.
@@ -44,7 +44,7 @@ control who can perform request to this API.
 
 First, create a DockerServer instance with the details of the docker server hosts. 
 
-***Note:*** By default, the DockerServer class, has as a default parameters the default port of Docker Engine API (2375) and the protocol (http).
+***Note:*** By default, the DockerServer class uses the default port (2375) and the protocol (http) of the Docker Engine API.
 
 #### Docker Engine API over HTTP
 
