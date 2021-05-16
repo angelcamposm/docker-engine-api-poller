@@ -8,12 +8,13 @@ use Acamposm\DockerEngineApiPoller\Interfaces\ApiResourceInterface;
 
 class Volumes implements ApiResourceInterface
 {
-    const PATH = '/volumes';
+    public const PATH = '/volumes';
 
     private DockerServer $server;
 
     /**
      * Volumes constructor.
+     *
      * @param DockerServer $server
      */
     public function __construct(DockerServer $server)
@@ -35,8 +36,10 @@ class Volumes implements ApiResourceInterface
      * Return low-level information about a network.
      *
      * @param string $id
-     * @return string
+     *
      * @throws VolumeNotDefinedException
+     *
+     * @return string
      */
     public function inspect(string $id = ''): string
     {

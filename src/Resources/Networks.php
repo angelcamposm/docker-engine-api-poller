@@ -8,12 +8,13 @@ use Acamposm\DockerEngineApiPoller\Interfaces\ApiResourceInterface;
 
 class Networks implements ApiResourceInterface
 {
-    const PATH = '/networks';
+    public const PATH = '/networks';
 
     private DockerServer $server;
 
     /**
      * Networks constructor.
+     *
      * @param DockerServer $server
      */
     public function __construct(DockerServer $server)
@@ -35,8 +36,10 @@ class Networks implements ApiResourceInterface
      * Return low-level information about a network.
      *
      * @param string|null $id
-     * @return string
+     *
      * @throws NetworkNotDefinedException
+     *
+     * @return string
      */
     public function inspect(?string $id = null): string
     {
