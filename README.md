@@ -1,8 +1,12 @@
 [![License](https://poser.pugx.org/acamposm/docker-engine-api-poller/license)](https://packagist.org/packages/acamposm/docker-engine-api-poller)
+[![Latest Stable Version](https://poser.pugx.org/acamposm/docker-engine-api-poller/v)](//packagist.org/packages/acamposm/docker-engine-api-poller)
+[![Latest Unstable Version](https://poser.pugx.org/acamposm/docker-engine-api-poller/v/unstable)](//packagist.org/packages/acamposm/docker-engine-api-poller)
 [![CodeFactor](https://www.codefactor.io/repository/github/angelcamposm/docker-engine-api-poller/badge)](https://www.codefactor.io/repository/github/angelcamposm/docker-engine-api-poller)
-[![StyleCI](https://github.styleci.io/repos/297182405/shield?branch=master)](https://github.styleci.io/repos/297182405)
+[![StyleCI](https://github.styleci.io/repos/297182405/shield?branch=master&style=flat)](https://github.styleci.io/repos/297182405)
+[![Total Downloads](https://poser.pugx.org/acamposm/docker-engine-api-poller/downloads)](//packagist.org/packages/acamposm/docker-engine-api-poller)
 
 # Docker Poller for Laravel
+---
 
 This package allows Laravel applications to interact with the Docker Engine API.
 
