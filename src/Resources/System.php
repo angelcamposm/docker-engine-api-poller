@@ -10,6 +10,7 @@ class System
 
     /**
      * System constructor.
+     *
      * @param DockerServer $server
      */
     public function __construct(DockerServer $server)

@@ -8,6 +8,7 @@ class ContainerMetrics
 
     /**
      * ContainerMetrics constructor.
+     *
      * @param object $container_stats
      */
     public function __construct(object $container_stats)
@@ -78,7 +79,6 @@ class ContainerMetrics
 
         return (self::getMemoryUsed() / self::getMemoryAvailable()) * 100.0;
     }
-
 
     private function getSystemCpuDelta(): float
     {
@@ -153,17 +153,17 @@ class ContainerMetrics
 
         return (object) [
             'timestamp' => $this->metrics->read,
-            'id' => $this->metrics->id,
-            'name' => $this->metrics->name,
-            'cpu' => (object) [
-                'count' => self::getOnlineCpus(),
+            'id'        => $this->metrics->id,
+            'name'      => $this->metrics->name,
+            'cpu'       => (object) [
+                'count'        => self::getOnlineCpus(),
                 'percent_free' => self::getCpuPercentFree(),
                 'percent_used' => self::getCpuPercentUsage(),
             ],
             'memory' => (object) [
-                'free' => self::getMemoryFree(),
-                'used' => self::getMemoryUsed(),
-                'total' => self::getMemoryAvailable(),
+                'free'         => self::getMemoryFree(),
+                'used'         => self::getMemoryUsed(),
+                'total'        => self::getMemoryAvailable(),
                 'percent_free' => self::getMemoryPercentFree(),
                 'percent_used' => self::getMemoryPercentUsage(),
             ],
@@ -171,7 +171,7 @@ class ContainerMetrics
                 property_exists($this->metrics, 'networks')
                     ? $this->metrics->networks
                     : [],
-            ]
+            ],
         ];
     }
 }

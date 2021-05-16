@@ -19,7 +19,7 @@ class DockerServer
     }
 
     /**
-     * Set HTTP as protocol
+     * Set HTTP as protocol.
      *
      * @return DockerServer
      */
@@ -31,7 +31,7 @@ class DockerServer
     }
 
     /**
-     * Set HTTPS as protocol
+     * Set HTTPS as protocol.
      *
      * @return DockerServer
      */
@@ -43,9 +43,10 @@ class DockerServer
     }
 
     /**
-     * Set server to query
+     * Set server to query.
      *
      * @param string $server
+     *
      * @return DockerServer
      */
     public function server(string $server): DockerServer
@@ -56,9 +57,10 @@ class DockerServer
     }
 
     /**
-     * Set port where API listen for queries
+     * Set port where API listen for queries.
      *
      * @param int $port
+     *
      * @return DockerServer
      */
     public function port(int $port): DockerServer

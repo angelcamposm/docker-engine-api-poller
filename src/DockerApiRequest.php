@@ -3,21 +3,17 @@
 namespace Acamposm\DockerEngineApiPoller;
 
 use Acamposm\DockerEngineApiPoller\Enums\ResourceMethods;
-use Acamposm\DockerEngineApiPoller\Exceptions\{
-    ContainerNotDefinedException,
-    DockerApiUnreachableException,
-    ImageNotDefinedException,
-    MethodNotDefinedException,
-    NetworkNotDefinedException,
-    VolumeNotDefinedException
-};
-use Acamposm\DockerEngineApiPoller\Resources\{
-    Containers,
-    Images,
-    Networks,
-    System,
-    Volumes,
-};
+use Acamposm\DockerEngineApiPoller\Exceptions\ContainerNotDefinedException;
+use Acamposm\DockerEngineApiPoller\Exceptions\DockerApiUnreachableException;
+use Acamposm\DockerEngineApiPoller\Exceptions\ImageNotDefinedException;
+use Acamposm\DockerEngineApiPoller\Exceptions\MethodNotDefinedException;
+use Acamposm\DockerEngineApiPoller\Exceptions\NetworkNotDefinedException;
+use Acamposm\DockerEngineApiPoller\Exceptions\VolumeNotDefinedException;
+use Acamposm\DockerEngineApiPoller\Resources\Containers;
+use Acamposm\DockerEngineApiPoller\Resources\Images;
+use Acamposm\DockerEngineApiPoller\Resources\Networks;
+use Acamposm\DockerEngineApiPoller\Resources\System;
+use Acamposm\DockerEngineApiPoller\Resources\Volumes;
 
 class DockerApiRequest
 {
@@ -27,6 +23,7 @@ class DockerApiRequest
 
     /**
      * DockerApiRequest constructor.
+     *
      * @param DockerServer $server
      */
     public function __construct(DockerServer $server)
@@ -40,14 +37,15 @@ class DockerApiRequest
      *
      * @param string $method
      * @param string $id
-     * @return DockerApiRequest
+     *
      * @throws ContainerNotDefinedException|MethodNotDefinedException
+     *
+     * @return DockerApiRequest
      */
     public function containers(
         string $method = ResourceMethods::CONTAINERS_LIST,
         string $id = ''
-    ): DockerApiRequest
-    {
+    ): DockerApiRequest {
         switch ($method) {
             case ResourceMethods::CONTAINERS_INSPECT:
                 $this->resource = (new Containers($this->server))->inspect($id);
@@ -70,14 +68,15 @@ class DockerApiRequest
      *
      * @param string $method
      * @param string $id
-     * @return DockerApiRequest
+     *
      * @throws ImageNotDefinedException|MethodNotDefinedException
+     *
+     * @return DockerApiRequest
      */
     public function images(
         string $method = ResourceMethods::IMAGES_LIST,
         string $id = ''
-    ): DockerApiRequest
-    {
+    ): DockerApiRequest {
         switch ($method) {
             case ResourceMethods::IMAGES_INSPECT:
                 $this->resource = (new Images($this->server))->inspect($id);
@@ -97,14 +96,15 @@ class DockerApiRequest
      *
      * @param string $method
      * @param string $id
-     * @return DockerApiRequest
+     *
      * @throws NetworkNotDefinedException|MethodNotDefinedException
+     *
+     * @return DockerApiRequest
      */
     public function networks(
         string $method = ResourceMethods::NETWORKS_LIST,
         string $id = ''
-    ): DockerApiRequest
-    {
+    ): DockerApiRequest {
         switch ($method) {
             case ResourceMethods::NETWORKS_INSPECT:
                 $this->resource = (new Networks($this->server))->inspect($id);
@@ -123,8 +123,10 @@ class DockerApiRequest
      * Set the resource to query.
      *
      * @param string $method
-     * @return $this
+     *
      * @throws MethodNotDefinedException
+     *
+     * @return $this
      */
     public function system(string $method = ResourceMethods::SYSTEM_VERSION)
     {
@@ -153,14 +155,15 @@ class DockerApiRequest
      *
      * @param string $method
      * @param string $id
-     * @return DockerApiRequest
+     *
      * @throws VolumeNotDefinedException|MethodNotDefinedException
+     *
+     * @return DockerApiRequest
      */
     public function volumes(
         string $method = ResourceMethods::VOLUMES_LIST,
         string $id = ''
-    ): DockerApiRequest
-    {
+    ): DockerApiRequest {
         switch ($method) {
             case ResourceMethods::VOLUMES_INSPECT:
                 $this->resource = (new Volumes($this->server))->inspect($id);
@@ -179,6 +182,7 @@ class DockerApiRequest
      * Set the fields of results that must be returned.
      *
      * @param array $fields
+     *
      * @return $this
      */
     public function fields(array $fields): DockerApiRequest
@@ -192,6 +196,7 @@ class DockerApiRequest
      * Filters the results with the specified fields in $fields property.
      *
      * @param array $api_data
+     *
      * @return array
      */
     private function filter(array $api_data): array
@@ -222,6 +227,7 @@ class DockerApiRequest
      * Convert an array to an object.
      *
      * @param array $array
+     *
      * @return object
      */
     private function toObject(array $array): object
@@ -232,8 +238,9 @@ class DockerApiRequest
     /**
      * Get specified resource from the Docker API.
      *
-     * @return object
      * @throws DockerApiUnreachableException
+     *
+     * @return object
      */
     public function get(): object
     {
