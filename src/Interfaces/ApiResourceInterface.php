@@ -15,6 +15,7 @@ interface ApiResourceInterface
      * Return low-level information about a resource.
      *
      * @param string $id
+     *
      * @return string
      */
     public function inspect(string $id): string;

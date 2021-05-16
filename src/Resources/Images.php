@@ -8,12 +8,13 @@ use Acamposm\DockerEngineApiPoller\Interfaces\ApiResourceInterface;
 
 class Images implements ApiResourceInterface
 {
-    const PATH = '/images';
+    public const PATH = '/images';
 
     private DockerServer $server;
 
     /**
      * Images constructor.
+     *
      * @param DockerServer $server
      */
     public function __construct(DockerServer $server)
@@ -35,8 +36,10 @@ class Images implements ApiResourceInterface
      * Return low-level information about an image.
      *
      * @param string $id
-     * @return string
+     *
      * @throws ImageNotDefinedException
+     *
+     * @return string
      */
     public function inspect(string $id = ''): string
     {

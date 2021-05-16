@@ -8,12 +8,13 @@ use Acamposm\DockerEngineApiPoller\Interfaces\ApiResourceInterface;
 
 class Containers implements ApiResourceInterface
 {
-    const PATH = '/containers';
+    public const PATH = '/containers';
 
     private DockerServer $server;
 
     /**
      * Containers constructor.
+     *
      * @param DockerServer $server
      */
     public function __construct(DockerServer $server)
@@ -25,6 +26,7 @@ class Containers implements ApiResourceInterface
      * Returns a list of containers.
      *
      * @param bool $all
+     *
      * @return string
      */
     public function list(bool $all = false): string
@@ -40,8 +42,10 @@ class Containers implements ApiResourceInterface
      * Return low-level information about a container.
      *
      * @param string|null $id
-     * @return string
+     *
      * @throws ContainerNotDefinedException
+     *
+     * @return string
      */
     public function inspect(string $id = ''): string
     {
@@ -56,8 +60,10 @@ class Containers implements ApiResourceInterface
      * Get container stats based on resource usage.
      *
      * @param string $id
-     * @return string
+     *
      * @throws ContainerNotDefinedException
+     *
+     * @return string
      */
     public function stats(string $id = ''): string
     {
