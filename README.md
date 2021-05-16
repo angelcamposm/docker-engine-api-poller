@@ -1,3 +1,7 @@
+[![License](https://poser.pugx.org/acamposm/docker-engine-api-poller/license)](https://packagist.org/packages/acamposm/docker-engine-api-poller)
+[![CodeFactor](https://www.codefactor.io/repository/github/angelcamposm/docker-engine-api-poller/badge)](https://www.codefactor.io/repository/github/angelcamposm/docker-engine-api-poller)
+[![StyleCI](https://github.styleci.io/repos/297182405/shield?branch=master)](https://github.styleci.io/repos/297182405)
+
 # Docker Poller for Laravel
 
 This package allows Laravel applications to interact with the Docker Engine API.
